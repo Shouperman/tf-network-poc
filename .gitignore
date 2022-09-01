@@ -1,0 +1,23 @@
+# Don't version any plans or state.
+.terraform
+.terraform.tfplan
+.terraform.lock.hcl
+*.tfplan*
+*.tfstate*
+
+# Secrets
+*id_rsa*
+!id_rsa.pub
+*.pem
+.vault-token
+*.buildenv*
+
+# Generated artifacts
+files/
+build/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
